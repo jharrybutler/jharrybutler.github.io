@@ -21,6 +21,12 @@ body
   padding:0;
   text-align:center;
 }
+p
+{
+font-family: 'Open Sans', sans-serif;
+font-weight:300;
+font-size:120px;
+}
 .leftbar
 {
 width:0%;
@@ -33,7 +39,8 @@ opacity:0.7;
     left: 0;
     right: 0;
     margin: auto;
-    transition:width 1s; /* Animation time */
+    transition:width 1s;
+    overflow:hidden;
 }
 .centered:hover + .leftbar
 {
@@ -96,7 +103,7 @@ margin:0;
   <div class="centered">
   <h1 style="color:#ffffff;opacity:1 !important;">S</h1>
   </div>
-  <div class="leftbar"></div>
+  <div class="leftbar"><p>Ideas</p></div>
 </div>
 <div class="bg2">
 </div>
