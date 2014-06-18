@@ -23,11 +23,24 @@ body
 }
 .leftbar
 {
-width:80px;
+width:0px;
 background:#333333;
-height:100%;
-float:left;
+height:100px
 opacity:0.7;
+z-index:0;
+margin:0;
+}
+@keyframes fontbulger {
+  0% {
+    width:0%
+  }
+  100% {
+    width:100%;
+  }
+}
+.leftbar:hover
+{
+    animation: fontbulger 2s infinite;
 }
 h1
 {
@@ -54,6 +67,7 @@ margin:0;
     line-height: 250px;
      border-radius:50%;
      overflow:hidden;
+     z-index:1;
 }
 .bg1
 {
@@ -82,6 +96,7 @@ margin:0;
 </head>
 <body id="wrapper">
 <div class="bg1">
+  <div class="leftbar"></div>
   <div class="centered">
   <h1 style="color:#ffffff;opacity:1 !important;">S</h1>
   </div>
