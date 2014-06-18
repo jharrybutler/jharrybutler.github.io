@@ -27,26 +27,18 @@ width:800px;
 background:#333333;
 height:100px;
 opacity:0.7;
-z-index:0;
     position: absolute;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-}
-@keyframes fontbulger {
-  0% {
-    width:0%
-  }
-  100% {
-    width:100%;
-  }
+    transition:width 0px; /* Animation time */
+    -webkit-transition:width 0px; /* For Safari */
 }
 .leftbar:hover
 {
-    animation: fontbulger 2s infinite;
-    -webkit-animation:fontbulger 2s infinite;
+    width:100%;
 }
 h1
 {
