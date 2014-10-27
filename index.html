@@ -1,124 +1,70 @@
 <html>
 <head>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-<script src="scroll.js"></script>
-    <script>
-
-        $(document).ready(function(){
-            $("#wrapper").smoothWheel()
-        });
-
-    </script>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
-<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <style>
-html
-{
-}
-body
-{
-  margin:0;
-  padding:0;
-  text-align:center;
-}
 p
 {
-font-family: 'Open Sans', sans-serif;
-font-weight:300;
-font-size:50px;
-color:#fff;
-margin:0;
-line-height:100px;
+font-family: 'Lora', serif;
 }
-.leftbar
+.logo
 {
-width:0%;
-background:#333333;
-height:100px;
-opacity:0.7;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition:width 1s;
-    overflow:hidden;
-}
-.centered:hover + .leftbar
-{
-width:100%; 
+max-width:10%;
+float:left;
 }
 h1
 {
-font-family: 'Open Sans', sans-serif;
-font-size:800%;
-font-weight:300;
+font-family: 'Lobster', cursive;
+font-size:500%;
 padding:0;
 margin:0;
 }
-.centered
-{
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    opacity:0.7;
-    width:250px;
-    height:250px;
-    background-image:url(https://www.anonimg.com/img/2f95c526fdd077edfb8d902f7ef11e00.png);
-    background-position:center;
-    background-color:#333333;
-    line-height: 250px;
-     border-radius:50%;
-     overflow:hidden;
-     z-index:1;
+.svg-wrapper {
+  position: relative;
+  top: 50px;
+  transform: translateY(-50%);
+	  margin: 0 auto;
+  width: 320px;  
 }
-.bg1
-{
-  z-index:-1;
-  background: url(bg.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width:100%;
-  height:100%;
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #ccc;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  -webkit-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  -moz-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  -o-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+
+
 }
-.bg2
-{
-    z-index:1;
-  background: url(http://www.mrbandfriends.co.uk/img/bg/our-work-bg.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width:100%;
-  height:100%;
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #000;
+  top: -48px;
+  position: relative;
+  text-align:center;
 }
-.ideas
-{
-    
-}
-.leftwrap
-{
-    float:left;
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
 }
 </style>
-<title>Saedi</title>
+<title>ARRY</title>
 </head>
-<body id="wrapper">
-<div class="bg1">
-  <div class="centered">
-  <h1 style="color:#ffffff;opacity:1 !important;">S</h1>
-  </div>
-  <div class="leftbar">
-  <div class="leftwrap"><p class="ideas">Ideas</p></div>
-  </div>
-</div>
-<div class="bg2">
-</div>
+<body>
+<div class="svg-wrapper">
+  <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+    <rect class="shape" height="60" width="320" />
+    <div class="text">ARRY</div>
+  </svg>
+</div><br />
+<center><div class="logodiv"><p>ARRY Streetwear i make the shit you buy it (please).</p></div></center>
 </body>
-</html>
+</html>		
